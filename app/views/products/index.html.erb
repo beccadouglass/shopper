@@ -28,7 +28,7 @@ Products </h2>
     <div class="col-sm">
       <div class="card" style="width: 18rem;">
       <% if product.image %>
-        <%= image_tag @product.image, class: 'img-fluid' %>
+        <%= image_tag product.image.url, class: 'img-fluid' %>
         
         <% end %>
         <!-- <img src="art_deco.png" class="card-img-top" alt="..."> -->
@@ -39,6 +39,8 @@ Products </h2>
           <%= hidden_field_tag :product_id, product.id %>
           <!-- <%= number_field_tag :quantity, 1, size: 3 %> -->
           <%= submit_tag "Add to Cart", class: "button2" %>
+          <%= link_to "Add to Cart", order_items_path, class: "button2"%>
+
           <% end %>
         </div>
       </div>

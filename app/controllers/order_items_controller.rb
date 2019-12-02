@@ -4,11 +4,12 @@ class OrderItemsController < ApplicationController
   end
 
   def create
+    redirect_to order_items_path
   end
 
   def destroy
     current_item.destroy
-    redirect_to cart_path
+    redirect_to order_items_path
   end
 
   private
