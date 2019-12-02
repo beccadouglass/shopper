@@ -11,9 +11,11 @@ Rails.application.routes.draw do
 
   get '/cart', to: 'order_items#index'
   resources :order_items, path: 'cart/items'
+  resources :orders
+  post '/additem', to: 'orders#add_item'
 
-get '/cart/checkout', to: 'orders#new', as: :checkout
-patch '/cart/checkout', to: 'orders#create'
+# get '/cart/checkout', to: 'orders#new', as: :checkout
+# patch '/cart/checkout', to: 'orders#create'
 
 end
 

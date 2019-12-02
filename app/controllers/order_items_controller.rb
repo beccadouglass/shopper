@@ -1,16 +1,21 @@
 class OrderItemsController < ApplicationController
   def index
-    @items = current_cart.items
+    @items = current_user.orders.first.items
   end
 
   def create
-    current_cart.add_item(params[:product_id], params[:quantity])
-    redirect_to cart_path
   end
 
   def destroy
-    current_cart.remove_item(id: params[:id])
+    current_item.destroy
     redirect_to cart_path
+  end
+
+  private
+
+  helper_method :current_item
+  def current_item
+    OrderItem.find(params[:id])
   end
 
 end

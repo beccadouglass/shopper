@@ -48,7 +48,7 @@
               
               </ul>
               <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-              <%= link_to pluralize(current_cart.items.count, 'item'), cart_path %>
+              <!--link to number of items in cart here -->
                 <i class= "fas fa-shopping-cart"> </i>
               </ul>
           </div>
@@ -75,7 +75,8 @@
       <div class="container">
         <b>Admin</b>
         <br />
-        <%= link_to 'Add products', '#' %> </br>
+        <!--link to add products page here -->
+        <%= link_to 'Add products', new_product_admin_product_path(product) %> </br>
       </div>
     </div>
   </body>

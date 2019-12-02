@@ -28,7 +28,8 @@ Products </h2>
     <div class="col-sm">
       <div class="card" style="width: 18rem;">
       <% if product.image_filename%>
-        <%= link_to image_tag (product.image_filename), product.image_filename %>
+        <%= link_to image_tag (product.image_filename), product.image_filename, class: 'img-fluid' %>
+        
         <% end %>
         <!-- <img src="art_deco.png" class="card-img-top" alt="..."> -->
         <div class="card-body">
