@@ -1,6 +1,6 @@
 class Admin::ProductsController < ApplicationController
-  before_action :authenticate_user!
-  before_action :require_authorized_for_current_product, only: [:new, :create, :destroy]
+  #before_action :authenticate_user!
+  #before_action :require_authorized_for_current_product, only: [:new, :create, :destroy]
 
   
   def new
@@ -8,8 +8,8 @@ class Admin::ProductsController < ApplicationController
   end
 
   def create
-    @product = current_user.products.create(product_params)
-    redirect_to product_admin_products_path(@product)
+    @product = Product.create(product_params)
+    redirect_to admin_products_path(@product)
   end
 
   def show
@@ -24,11 +24,11 @@ class Admin::ProductsController < ApplicationController
 
   private
 
-  def require_authorized_for_current_product
-    if current_product.user != current_user
-      render plain: "unauthorized", status :unauthorized
-    end
-  end
+  #def require_authorized_for_current_product
+  #  if current_product.user != current_user
+  #    render plain: "unauthorized", status :unauthorized
+  #  end
+  # end
 
 
   def product_params
