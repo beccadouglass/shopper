@@ -27,8 +27,8 @@ Products </h2>
     <% @product.each do |product| %>
     <div class="col-sm">
       <div class="card" style="width: 18rem;">
-      <% if product.image_filename%>
-        <%= link_to image_tag (product.image), product.image, class: 'img-fluid' %>
+      <% if product.image %>
+        <%= image_tag @product.image, class: 'img-fluid' %>
         
         <% end %>
         <!-- <img src="art_deco.png" class="card-img-top" alt="..."> -->

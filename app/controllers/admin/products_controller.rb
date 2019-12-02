@@ -9,7 +9,7 @@ class Admin::ProductsController < ApplicationController
 
   def create
     @product = Product.create(product_params)
-    redirect_to admin_products_path(@product)
+    redirect_to root_path(@product)
   end
 
   def show
