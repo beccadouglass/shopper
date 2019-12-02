@@ -26,8 +26,9 @@ class Admin::ProductsController < ApplicationController
 
   def require_authorized_for_current_product
     if current_product.user != current_user
-      render plain: "Unauthorized", status :unauthorized
+      render plain: "unauthorized", status :unauthorized
     end
+  end
 
 
   def product_params

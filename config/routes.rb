@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   root "products#index"
   resources :products, only: [:index, :new, :create] do
   
-    namespace :admin do
-    resources :products, only: [:new, :create, :show]
   end
+
+  namespace :admin do
+    resources :products, only: [:new, :create, :show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   end
 
