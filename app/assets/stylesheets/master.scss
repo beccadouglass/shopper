@@ -16,11 +16,6 @@ h6,
   margin: 0;
 }
 
-.dark-links {
-  background-color: rgb(75, 28, 3);
-  color: black !important;
-}
-
 .title {
   font-family: "Satisfy";
   font-size: 60px;
@@ -181,4 +176,13 @@ a:active {
 .img-fluid {
   height: 250px;
 
+}
+
+.dark-links {
+  background-color: rgb(75, 28, 3);
+  color: black;
+}
+
+.stripe {
+  margin-left: 50px;
 }

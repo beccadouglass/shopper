@@ -2,7 +2,7 @@ class ChargesController < ApplicationController
   
   def new
   end
-  
+
   def create
     # Amount in cents
     @amount = (current_order.subtotal * 100).to_i
@@ -21,3 +21,4 @@ class ChargesController < ApplicationController
     flash[:error] = e.message
     redirect_to order_items_path
   end
+end
