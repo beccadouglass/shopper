@@ -1,23 +1,33 @@
+<div class="frosty">
+      <h1 class="title">Chestnut Feather</h1>
+      </br>
+      <h3>artistic and beaded leather designs for the equestrian</h3>
+    </div>
+
 </br>
 <h2>Current Cart</h2>
+</br>
 </br>
 
 <table>
   <thead>
+    <thead style="border-bottom:1px solid gray">
+
     <tr>
     <!-- arrange these -->
-      <td>Product</td>
-      <td>Price</td>
-      <!-- <td>Quantity</td> -->
+      <td><h5><strong>Product</strong></h5></td>
+      <td><h5><strong>Price</strong></h5></td>
+      <td><h5><strong>Quantity</strong><h5></td>
       <td></td>
     </tr>
   </thead>
+
   <tbody>
     <% @items.each do |item| %>
     <tr>
       <td><%= item.product.title %></td>
       <td><%= number_to_currency item.product.price %></td>
-      <td><%= item.quantity %></td>
+      <td align="center"><%= item.quantity %></td>
       <td> 
         <%= form_for item, method: :delete do |f| %>
         <%= f.submit "Remove" %>
@@ -43,3 +53,8 @@
 
 </br>
 </br> %>
+</br>
+</br>
+</br>
+</br>
+</br>

@@ -16,6 +16,11 @@ h6,
   margin: 0;
 }
 
+.dark-links {
+  background-color: rgb(75, 28, 3);
+  color: black;
+}
+
 .title {
   font-family: "Satisfy";
   font-size: 60px;
@@ -45,7 +50,9 @@ h6,
 
 }
 
-.body {}
+.body {
+  position: absolute;
+}
 
 
 .fa-shopping-cart {
@@ -106,6 +113,7 @@ h6,
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .booyah-box h2,
@@ -124,12 +132,13 @@ flex-content-container {
   background-color: rgb(75, 28, 3);
   color: white;
   padding: 10px 0px;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 
 table {
   width: 70%;
+  margin-left: 10px;
 }
 
 .button1 {
