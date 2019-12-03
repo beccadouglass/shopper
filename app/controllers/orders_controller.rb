@@ -11,6 +11,7 @@ class OrdersController < ApplicationController
     quantity = params[:quantity]
     product = Product.find(product_id)
     order_item = current_order.items.find_or_create_by(product_id: product_id, quantity: quantity, order_id: current_order.id)
+    update_subtotal(product, quantity)
     redirect_to cart_path
   end
 
