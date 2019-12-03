@@ -1,5 +1,17 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+
+  helper_method :current_order
+  def current_order
+    current_user.orders.each do |order|
+      if order.status == "cart"
+        return @order = order
+      end
+    end
+    if !@order
+      return @order = current_user.orders.create(status: "cart")
+    end
+  end
   #before_action :current_cart
 
   #def current_cart

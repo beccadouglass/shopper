@@ -16,18 +16,15 @@ class OrdersController < ApplicationController
 
   private
 
-
-  helper_method :current_order
-  def current_order
-    current_user.orders.each do |order|
-      if order.status == "cart"
-        return @order = order
-      end
+  def update_subtotal(product, quantity)
+    price = product.price * quantity.to_i
+    if current_order.subtotal
+      current_subtotal = current_order.subtotal + price
+      current_order.update_attributes(subtotal: current_subtotal)
     end
-    if !@order
-      return @order = current_user.orders.create(status: "cart")
-    end
+    current_order.update_attributes(subtotal: price)
   end
+  
 
   def order_params
     params.require(:order).permit(:user_id, :status, :subtotal)

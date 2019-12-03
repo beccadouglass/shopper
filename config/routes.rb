@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :order_items, path: 'cart/items'
   resources :orders
   post '/additem', to: 'orders#add_item'
+  resources :charges
 
 # get '/cart/checkout', to: 'orders#new', as: :checkout
 # patch '/cart/checkout', to: 'orders#create'
