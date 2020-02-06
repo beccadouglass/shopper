@@ -1,24 +1,18 @@
-# README
+# Shopping App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A full stack application as the start of an online ecommerce site for selling beaded browbands.  Utilizing user management, advanced database and credit card payment processing API.
 
-Things you may want to cover:
+TRY IT YOURSELF (link to heroku)
 
-* Ruby version
+VIDEO DEMO HERE (add video)
 
-* System dependencies
+Built With:
 
-* Configuration
+* Ruby and Ruby on Rails
 
-* Database creation
+* Postgresql database
 
-* Database initialization
+* 
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+PLANNED UPDATES: this site will updated to improve UI/UX Design and to add further functionality of the cart including packing, shipping to become a full ecommerce site with security and SEO.
