@@ -2,7 +2,7 @@
 
 A full stack application as the start of an online ecommerce site for selling beaded browbands.  Utilizing user management, advanced database and credit card payment processing API.
 
-TRY IT YOURSELF (link to heroku)
+TRY IT YOURSELF [https://shopper-rebecca-douglass.herokuapp.com]
 
 VIDEO DEMO HERE (add video)
 
