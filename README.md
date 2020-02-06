@@ -5,6 +5,9 @@ A full stack application as the start of an online ecommerce site for selling be
 TRY IT YOURSELF [https://shopper-rebecca-douglass.herokuapp.com]
 
 VIDEO DEMO HERE (add video)
+<a href="https://youtu.be/gyeB5USPB4Q
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="Chestnut Feather Screen Shot" width="240" height="180" border="10" /></a>
 
 Built With:
 
