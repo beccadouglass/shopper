@@ -17,3 +17,6 @@ Built With:
 
 
 PLANNED UPDATES: this site will updated to improve UI/UX Design and to add further functionality of the cart including packing, shipping to become a full ecommerce site with security and SEO.
+
+
+https://user-images.githubusercontent.com/52284759/75071341-30110880-54c3-11ea-9a67-deb6b77af2b2.png
